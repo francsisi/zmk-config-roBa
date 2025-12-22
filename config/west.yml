@@ -17,7 +17,8 @@ manifest:
       import: app/west.yml
     #　FOR　RGB 
     - name: zmk-rgbled-widget
-      remote: caksoylar      
+      remote: caksoylar
+      revision: main
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main

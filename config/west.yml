@@ -15,7 +15,7 @@ manifest:
       remote: zmkfirmware
       revision: v0.3-branch
       import: app/west.yml
-    #　FOR　RGB
+    #　FOR　RGB 
     - name: zmk-rgbled-widget // 追記
       remote: caksoylar      
     - name: zmk-pmw3610-driver

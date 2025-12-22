@@ -16,7 +16,7 @@
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
 #
----
+
 include:
  - board: seeeduino_xiao_ble
    shield: roBa_R
@@ -25,3 +25,8 @@ include:
    shield: roBa_L
  - board: seeeduino_xiao_ble
    shield: settings_reset
+ # for rgb https://qiita.com/IRumA/items/8b50da1059fd7a448010
+ - board: seeeduino_xiao_ble
+   shield: rgbled_adapter
+ - board: seeeduino_xiao_ble
+   shield: rgbled_adapter

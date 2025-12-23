@@ -114,8 +114,8 @@
 
         ARROW {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LEFT_PARENTHESIS                              &kp RIGHT_PARENTHESIS  &kp HOME         &kp UP_ARROW    &kp END          &none
-&kp TAB           &none       &none       &none       &kp LEFT_BRACE        &none       &kp UNDERSCORE  &kp RIGHT_BRACE        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LS(NUMBER_1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LEFT_PARENTHESIS                              &kp RIGHT_PARENTHESIS  &kp HOME         &kp UP_ARROW    &kp END          &kp BACKSLASH
+&kp TAB           &none       &none       &none       &kp LEFT_BRACE        &none       &kp UNDERSCORE  &kp RIGHT_BRACE        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(GRAVE)
 &kp LS(TAB)       &none       &none       &none       &kp LEFT_BRACKET      &none       &trans          &kp RIGHT_BRACKET      &kp LS(LC(TAB))  &kp LS(TAB)     &none            &none
 &trans            &trans      &trans      &trans      &trans                &trans      &trans          &trans                                                                   &none
             >;
@@ -123,10 +123,10 @@
 
         FUNC {
             bindings = <
-&kp ESCAPE   &kp LS(N1)  &kp LS(N2)  &kp LC(LS(N3))  &kp LS(N4)                          &kp LS(N5)  &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(MINUS)
-&kp TAB      &none       &none       &none           &none       &trans      &trans      &trans      &trans      &trans      &trans      &trans
-&kp LS(TAB)  &none       &none       &none           &none       &trans      &trans      &trans      &trans      &trans      &trans      &trans
-&trans       &trans      &trans      &trans          &trans      &trans      &kp DELETE  &trans                                          &trans
+&kp LS(N1)   &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                          &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(MINUS)      &kp LS(EQUAL)
+&kp TAB      &none       &none       &none       &none       &trans      &trans      &trans      &trans      &trans      &kp BACKSLASH      &kp LS(GRAVE)
+&kp LS(TAB)  &none       &none       &none       &none       &trans      &trans      &trans      &trans      &trans      &kp LS(BACKSLASH)  &kp GRAVE
+&trans       &trans      &trans      &trans      &trans      &trans      &kp DELETE  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;

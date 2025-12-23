@@ -105,10 +105,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE   &kp F1  &kp F2   &kp F3   &kp F4                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
-&kp TAB      &kp F5  &kp F6   &kp F7   &kp F8   &trans      &trans  &kp N4        &kp NUMBER_5  &kp N6        &none         &kp EQUAL
-&kp LS(TAB)  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &trans  &kp N1        &kp N2        &kp N3        &trans        &kp SINGLE_QUOTE
-&trans       &trans  &trans   &trans   &trans   &trans      &trans  &kp F2                                                  &trans
+&kp ESCAPE   &kp F1  &kp F2   &kp F3   &kp F4                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp MINUS
+&kp TAB      &kp F5  &kp F6   &kp F7   &kp F8   &trans      &trans  &kp N4        &kp NUMBER_5  &kp N6        &none           &kp EQUAL
+&kp LS(TAB)  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &trans  &kp N1        &kp N2        &kp N3        &kp LS(PERIOD)  &kp SINGLE_QUOTE
+&trans       &trans  &trans   &trans   &trans   &trans      &trans  &kp F2                                                    &trans
             >;
         };
 
@@ -116,7 +116,7 @@
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LEFT_PARENTHESIS                              &kp RIGHT_PARENTHESIS  &kp HOME         &kp UP_ARROW    &kp END          &kp BACKSLASH
 &kp TAB           &none       &none       &none       &kp LEFT_BRACE        &none       &kp UNDERSCORE  &kp RIGHT_BRACE        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(GRAVE)
-&kp LS(TAB)       &none       &none       &none       &kp LEFT_BRACKET      &none       &trans          &kp RIGHT_BRACKET      &kp LS(LC(TAB))  &kp LS(TAB)     &none            &none
+&kp LS(TAB)       &none       &none       &none       &kp LEFT_BRACKET      &none       &trans          &kp RIGHT_BRACKET      &kp LS(LC(TAB))  &kp LC(TAB)     &none            &none
 &trans            &trans      &trans      &trans      &trans                &trans      &trans          &trans                                                                   &none
             >;
         };

@@ -118,7 +118,12 @@
             bindings = <&none &kp EXCL &kp LS(O) &kp T &kp N1 &kp N2 &kp N3 &kp N4 &kp Q &kp W &kp E &kp R &kp J &kp K>;
             label = "PASS1";
         };
-
+        pass2: pass2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(C) &kp LS(Y) &kp N9 &kp H &kp N5 &kp LS(H) &kp G &kp LS(W)>;
+            label = "PASS2";
+        };
         user_name: user_name {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -192,7 +197,7 @@
 
         SCROLL {
             bindings = <
-&trans        &trans         &trans  &trans      &trans                      &trans  &trans  &trans  &trans  &trans
+&trans        &trans         &trans  &trans      &pass2                      &trans  &trans  &trans  &trans  &trans
 &kp LEFT_ALT  &kp LG(LS(S))  &trans  &pass1      &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans         &trans  &user_name  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans         &trans  &trans      &trans  &trans      &trans  &trans                          &trans

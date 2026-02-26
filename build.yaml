@@ -20,11 +20,15 @@
 include:
  - board: seeeduino_xiao_ble
    shield: roBa_R rgbled_adapter
+   artifact-name: koRe1_Right        # ←ここを追加
    snippet: studio-rpc-usb-uart
  - board: seeeduino_xiao_ble
    shield: roBa_L rgbled_adapter
+   artifact-name: koRe1_Left         # ←ここを追加
  - board: seeeduino_xiao_ble
    shield: settings_reset
+   artifact-name: koRe1_Reset        # ←ここを追加（任意）
+
  # for rgb https://qiita.com/IRumA/items/8b50da1059fd7a448010
  # - board: seeeduino_xiao_ble
  #   shield: rgbled_adapter

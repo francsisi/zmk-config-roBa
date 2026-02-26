@@ -9,9 +9,9 @@
 / {
 
     aliases {
-        led-red = &led_0;   // もしボード定義で led0 なら &led0
-        led-green = &led_1; // もしボード定義で led1 なら &led1
-        led-blue = &led_2;  // もしボード定義で led2 なら &led2
+        led-red = &{/};
+        led-green = &{/};
+        led-blue = &{/};
     };
 
     macros {

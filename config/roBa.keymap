@@ -7,6 +7,16 @@
 #define MOUSE 5
 
 / {
+
+
+    /* ここから追加 */
+    aliases {
+        led-red = &{/};
+        led-green = &{/};
+        led-blue = &{/};
+    };
+    /* ここまで追加 */
+
     macros {
         exit_AML: exit_AML {
             compatible = "zmk,behavior-macro";

@@ -7,22 +7,7 @@
 #define MOUSE 5
 
 / {
-
-    // 1. 偽のLED定義を作成（システムを騙すため）
-    dummy_leds {
-        compatible = "gpio-leds";
-        // 存在しないピンを指定するか、使用していないピンを仮当てします
-        dummy_red: led_0 { gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>; };
-        dummy_green: led_1 { gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>; };
-        dummy_blue: led_2 { gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>; };
-    };
-
-    // 2. ウィジェットが探している名前と、上の偽LEDを紐付ける
-    aliases {
-        led-red = &dummy_red;
-        led-green = &dummy_green;
-        led-blue = &dummy_blue;
-    };
+    
     
     macros {
         exit_AML: exit_AML {

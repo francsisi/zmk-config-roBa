@@ -122,7 +122,7 @@
         pass2: pass2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(C) &kp LS(Y) &kp N9 &kp H &kp N5 &kp LS(H) &kp G &kp LS(W)>;
+            bindings = <&none &kp C &kp LS(Y) &kp N9 &kp H &kp N5 &kp LS(H) &kp G &kp LS(W)>;
             label = "PASS2";
         };
 
@@ -131,6 +131,13 @@
             #binding-cells = <0>;
             bindings = <&none &kp H &kp I &kp R &kp O &kp K &kp I &kp UNDER &kp N &kp A &kp G &kp A &kp O>;
             label = "USER_NAME";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
         };
     };
 

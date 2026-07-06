@@ -88,8 +88,8 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
+        lalt {
+            bindings = <&kp LEFT_ALT>;
             key-positions = <11 10>;
         };
 
@@ -101,6 +101,11 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+        };
+
+        none {
+            bindings = <&none>;
+            key-positions = <20 21>;
         };
     };
 
@@ -177,9 +182,9 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LEFT_PARENTHESIS                      &kp RIGHT_PARENTHESIS  &kp HOME         &kp UP_ARROW    &kp END          &kp BACKSLASH
-&kp TAB      &kp LS(N4)  &kp LS(N5)  &kp LS(N6)     &kp LEFT_BRACE        &none       &trans  &kp RIGHT_BRACE        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(GRAVE)
-&kp LS(TAB)  &kp LS(N7)  &kp LS(N8)  &kp LS(GRAVE)  &kp LEFT_BRACKET      &none       &trans  &kp RIGHT_BRACKET      &kp LS(LC(TAB))  &kp LC(TAB)     &none            &none
+&kp ESCAPE   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LEFT_PARENTHESIS                      &kp RIGHT_PARENTHESIS  &kp HOME         &kp UP_ARROW    &kp END          &trans
+&kp TAB      &kp LS(N4)  &kp LS(N5)  &kp LS(N6)     &kp LEFT_BRACE        &none       &trans  &kp RIGHT_BRACE        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LS(TAB)  &kp LS(N7)  &kp LS(N8)  &kp LS(GRAVE)  &kp LEFT_BRACKET      &none       &trans  &kp RIGHT_BRACKET      &kp LS(LC(TAB))  &kp LC(TAB)     &trans           &trans
 &trans       &trans      &trans      &trans         &trans                &trans      &trans  &trans                                                                   &none
             >;
         };
@@ -215,10 +220,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &kp LA(F4)  &trans                           &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
-&trans  &trans  &trans  &trans      &trans  &trans      &none        &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 4   &bt BT_NXT
-&trans  &trans  &trans  &trans      &trans  &trans      &bootloader  &trans         &trans         &trans         &bt BT_CLR_ALL  &bt BT_CLR
-&trans  &trans  &trans  &trans      &trans  &trans      &trans       &trans                                                       &bt BT_CLR_ALL
+&bootloader  &trans  &trans  &kp LA(F4)  &trans                      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
+&trans       &trans  &trans  &trans      &trans  &trans      &none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 4   &bt BT_NXT
+&trans       &trans  &trans  &trans      &trans  &trans      &trans  &trans         &trans         &trans         &bt BT_CLR_ALL  &bt BT_CLR
+&trans       &trans  &trans  &trans      &trans  &trans      &trans  &trans                                                       &bt BT_CLR_ALL
             >;
         };
     };
